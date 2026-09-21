@@ -4,6 +4,7 @@ services:
     container_name: macos
     environment:
       VERSION: "15"
+      AUDIO: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun
