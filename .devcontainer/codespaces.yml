@@ -3,11 +3,12 @@ services:
     container_name: macos
     image: ghcr.io/dockur/macos
     environment:
-      RAM_SIZE: "half"
-      DISK_SIZE: "max"
+      RAM_SIZE: "max"
+      DISK_SIZE: "128G"
       CPU_CORES: "max"
       RAM_MINIMUM: "1G"
       DISK_MINIMUM: "1G"
+      AUDIO: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun
